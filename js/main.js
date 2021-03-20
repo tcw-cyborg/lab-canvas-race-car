@@ -72,7 +72,19 @@ function draw() {
 document.onkeydown = function (e) {
   if (!car) return;
 
-  // TODO
+  switch (e.key) {
+
+    case 'ArrowLeft':
+
+      car.moveLeft();
+      break;
+
+    case 'ArrowRight':
+      car.moveRight();
+      break;
+  }
+
+
 }
 
 let raf;
